@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"projec1-first\startup_stm32f103xb.o"
+"projec1-first\main.o"
+"projec1-first\stm32f1xx_it.o"
+"projec1-first\stm32f1xx_hal_msp.o"
+"projec1-first\stm32f1xx_hal_gpio_ex.o"
+"projec1-first\stm32f1xx_hal_tim.o"
+"projec1-first\stm32f1xx_hal_tim_ex.o"
+"projec1-first\stm32f1xx_hal.o"
+"projec1-first\stm32f1xx_hal_rcc.o"
+"projec1-first\stm32f1xx_hal_rcc_ex.o"
+"projec1-first\stm32f1xx_hal_gpio.o"
+"projec1-first\stm32f1xx_hal_dma.o"
+"projec1-first\stm32f1xx_hal_cortex.o"
+"projec1-first\stm32f1xx_hal_pwr.o"
+"projec1-first\stm32f1xx_hal_flash.o"
+"projec1-first\stm32f1xx_hal_flash_ex.o"
+"projec1-first\stm32f1xx_hal_exti.o"
+"projec1-first\system_stm32f1xx.o"
+"projec1-first\button.o"
+"projec1-first\ledpwm.o"
+--strict --scatter "PROJEC1-first\PROJEC1-first.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PROJEC1-first.map" -o PROJEC1-first\PROJEC1-first.axf
